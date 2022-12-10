@@ -3,7 +3,7 @@
     "version": "0.0.0",
     "command_name": "krbrelayup",
     "original_author": "@Dec0ne",
-    "repo_url": "https://github.com/sliverarmory/KrbRelayUp",
+    "repo_url": "https://github.com/NightlyEscaper/KrbRelayUp",
     "help": "A universal no-fix local privilege escalation in windows domain environments where LDAP signing is not enforced (the default settings).",
 
     "entrypoint": "Main",
