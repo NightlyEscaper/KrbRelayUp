@@ -83,7 +83,6 @@ jobs:
       # Powershell is utter fucking trash. I AGREEEEEEEEEEEE!!!
       run: |
         Get-Content -Path alias.json | .\jq.exe '.version |= ""${{ needs.sync_latest_from_upstream.outputs.tag }}""' > ./compiled/alias.json
-        Copy-Item -Path LICENSE -Destination compiled\LICENSE
         cd compiled
         ls
         tar.exe -czvf ..\krbrelayup.tar.gz .
