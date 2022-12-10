@@ -100,6 +100,7 @@ jobs:
       with:
         repo_token: "${{ secrets.GITHUB_TOKEN }}"
         prerelease: false
+        automatic_release_tag: ${{ needs.sync_latest_from_upstream.outputs.tag }}
         files: |
           krbrelayup.minisig
           krbrelayup.tar.gz
